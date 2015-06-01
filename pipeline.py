@@ -195,7 +195,7 @@ class WgetArgs(object):
         
         assert item_type in ('recipe')
         
-        if item_type == 'site':
+        if item_type == 'recipe':
             wget_args.append('http://www.foodily.com/r/{0}'.format(item_value))
         else:
             raise Exception('Unknown item')
